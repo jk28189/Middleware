@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<configuration scan="true" debug="false">
+
+  <appender name="catalina" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${catalina.base}/logs/catalina.out</File>
+    <append>true</append>
+    <encoder>
+      <charset>utf-8</charset>
+      <pattern>%d{HH:mm:ss.SSS} %-5level {%thread} [%logger{40}] %msg%n</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${catalina.base}/logs/catalina-%d{yyyyMMdd}-%i.out.zip</fileNamePattern>
+      <maxHistory>7</maxHistory>
+      <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <maxFileSize>200MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+    </rollingPolicy>
+  </appender>
+
+
+  <root level="INFO">
+    <appender-ref ref="catalina"/>
+  </root>
+</configuration>
