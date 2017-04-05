@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Server port="8006" shutdown="SHUTDOWN">
+<Server port="8005" shutdown="SHUTDOWN">
   <Listener className="org.apache.catalina.startup.VersionLoggerListener" />
   <Listener className="org.apache.catalina.security.SecurityListener" />
   <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="off" />
@@ -23,27 +23,12 @@
         maxThreads="150" minSpareThreads="4"/>
     -->
 
-      <Connector port="9090" protocol="org.apache.coyote.http11.Http11AprProtocol"
+      <Connector port="8080" protocol="org.apache.coyote.http11.Http11AprProtocol"
                connectionTimeout="20000"
                acceptCount="300"
                tcpNoDelay="true"
                maxConnections="8192"
-               redirectPort="8444" />
-
-    <!-- A "Connector" using the shared thread pool-->
-    <!--
-    <Connector executor="tomcatThreadPool"
-               port="8080" protocol="HTTP/1.1"
-               connectionTimeout="20000"
                redirectPort="8443" />
-    -->
-  <!--  <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
-               maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-               clientAuth="false" sslProtocol="TLS" /> -->
-    
-
-    <!-- Define an AJP 1.3 Connector on port 8009 -->
-  <!--  <Connector port="8011" protocol="AJP/1.3" redirectPort="8444" /> -->
 
 
     <Engine name="Catalina" defaultHost="localhost">
