@@ -1,5 +1,5 @@
 ########### JAVA_HOME for Tomcat SETTING#########
-export JAVA_HOME=/usr/java8_64
+export JAVA_HOME=/usr/local/tomcat/java8_64
 
 ########################## APM PINPOINT Setting ########################################
 #export PINPOINT_AGENT_PATH=/usr/local/pinpoint-agent
