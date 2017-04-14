@@ -1,5 +1,4 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- The contents of this file will be loaded for each web application -->
 <Context>
 
     <!-- Default set of monitored resources. If one of these changes, the    -->
@@ -7,23 +6,7 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
-    <!-- Uncomment this to disable session persistence across Tomcat restarts -->
-    <!--
-    <Manager pathname="" />
-    -->
 
-    <!-- Uncomment this to enable Comet connection tacking (provides events
-         on session expiration as well as webapp lifecycle) -->
-    <!--
-    <Valve className="org.apache.catalina.valves.CometConnectionManagerValve" />
-    -->
-<!--  <Valve className="com.orangefunction.tomcat.redissessions.RedisSessionHandlerValve" />
-  <Manager className="com.orangefunction.tomcat.redissessions.RedisSessionManager"
-           host="localhost"
-           port="6379"
-           database="0"
-           maxInactiveInterval="60" /> 
-/> -->
    <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="localhost:6379"
 	sessionKeyPrefix="_rsm_"
@@ -36,7 +19,6 @@
 	timeout="60000"
 	pingTimeout="1000"
 	retryAttempts="20"
-	retryInterval="1000"
-/>
+	retryInterval="1000"/>
 </Context>
 
