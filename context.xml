@@ -8,7 +8,7 @@
 
 
    <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="localhost:6379"
+	endpoint="192.10.250.230:6379"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
