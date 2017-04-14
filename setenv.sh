@@ -1,5 +1,5 @@
 ########### JAVA_HOME for Tomcat SETTING#########
-#export JAVA_HOME=/usr/java/java8_64
+export JAVA_HOME=/usr/java8_64
 
 ########################## APM PINPOINT Setting ########################################
 #export PINPOINT_AGENT_PATH=/usr/local/pinpoint-agent
@@ -25,7 +25,7 @@ LOG_HOME="/usr/local/tomcat/logs"
 
 JAVA_OPTS="${JAVA_OPTS} -server"
 JAVA_OPTS="${JAVA_OPTS} -D${SERVER_NAME}"
-JAVA_OPTS="${JAVA_OPTS} -Xms256m -Xmx512m -XX:+HeapDumpOnOutOfMemoryError"
+JAVA_OPTS="${JAVA_OPTS} -Xms128m -Xmx256m -XX:+HeapDumpOnOutOfMemoryError"
 JAVA_OPTS="${JAVA_OPTS} -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintHeapAtGC"
 #JAVA_OPTS="${JAVA_OPTS} -Djava.security.egd=file:///dev/urandom"
 #JAVA_OPTS="${JAVA_OPTS} -verbosegc -Xloggc:${GC_LOG_HOME}/${GC_LOG_FILENM}"
