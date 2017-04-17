@@ -8,7 +8,7 @@
 
 
    <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="myapp-subgroup-outergroup.marathon.mesos"
+	endpoint="redis.marathon.autoip.dcos.thisdcos.directory:6379"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
