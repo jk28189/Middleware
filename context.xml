@@ -7,7 +7,7 @@
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
 
-   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+<!--   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="192.10.250.229:6379"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
@@ -19,6 +19,11 @@
 	timeout="60000"
 	pingTimeout="1000"
 	retryAttempts="20"
-	retryInterval="1000"/>
+	retryInterval="1000"/> -->
+	<Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+	host="localhost"
+	port="6379"
+	database="0"
+	maxInactiveInterval="60"/> 
 </Context>
 
