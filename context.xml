@@ -1,11 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Context>
-
-    <!-- Default set of monitored resources. If one of these changes, the    -->
-    <!-- web application will be reloaded.                                   -->
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
-
 
   <!-- <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="redis.marathon.agentip.dcos.thisdcos.directory"
@@ -19,11 +15,5 @@
 	timeout="60000"
 	pingTimeout="1000"
 	retryAttempts="20"
-	retryInterval="1000"/> 
-	<Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	host="192.10.250.231"
-	port="6379"
-	database="0"
-	maxInactiveInterval="60"/> -->
+	retryInterval="1000"/> -->
 </Context>
-
