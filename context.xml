@@ -7,7 +7,7 @@
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
 
-   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+  <!-- <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="redis.marathon.agentip.dcos.thisdcos.directory"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
