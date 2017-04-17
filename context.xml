@@ -7,8 +7,8 @@
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
 
-<!--   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="192.10.250.229:6379"
+   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+	endpoint="myapp-subgroup-outergroup.marathon.autoip.dcos.thisdcos.directory"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
@@ -20,7 +20,7 @@
 	pingTimeout="1000"
 	retryAttempts="20"
 	retryInterval="1000"/> 
-	<Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+<!--	<Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	host="192.10.250.231"
 	port="6379"
 	database="0"
