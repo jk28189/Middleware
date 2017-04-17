@@ -21,7 +21,7 @@
 	retryAttempts="20"
 	retryInterval="1000"/> -->
 	<Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	host="localhost"
+	host="192.10.250.231"
 	port="6379"
 	database="0"
 	maxInactiveInterval="60"/> 
