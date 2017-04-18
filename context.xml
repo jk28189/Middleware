@@ -5,15 +5,5 @@
 
    <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="redis.marathon.autoip.dcos.thisdcos.directory"
-	sessionKeyPrefix="_rsm_"
-	saveOnChange="false"
-	forceSaveAfterRequest="false"
-	dirtyOnMutation="false"
-	ignorePattern=".*\\.(ico|png|gif|jpg|jpeg|swf|css|js)$"
-	connectionPoolSize="20"
-	database="0"
-	timeout="60000"
-	pingTimeout="1000"
-	retryAttempts="20"
-	retryInterval="1000"/> 
+	database="0"/> 
 </Context>
