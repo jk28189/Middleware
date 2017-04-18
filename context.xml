@@ -4,6 +4,6 @@
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
    <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="redis.marathon.autoip.dcos.thisdcos.directory"
+	endpoint="redis.marathon.autoip.dcos.thisdcos.directory:6379"
 	database="0"/> 
 </Context>
