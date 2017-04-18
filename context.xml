@@ -3,7 +3,7 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
-  <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+  <!-- <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="192.10.250.231:6379"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
@@ -15,5 +15,5 @@
 	timeout="60000"
 	pingTimeout="1000"
 	retryAttempts="20"
-	retryInterval="1000"/> 
+	retryInterval="1000"/> -->
 </Context>
