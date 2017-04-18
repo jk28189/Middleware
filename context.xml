@@ -12,7 +12,6 @@
 	ignorePattern=".*\\.(ico|png|gif|jpg|jpeg|swf|css|js)$"
 	connectionPoolSize="100"
 	database="0"
-	password="<null>"
 	timeout="60000"
 	pingTimeout="1000"
 	retryAttempts="20"
