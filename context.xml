@@ -13,7 +13,7 @@
 	connectionPoolSize="100"
 	database="0"
 	timeout="60000"
-	connection-minimum-idle-size="1"
+	connectionMinimumIdleSize="1"
 	pingTimeout="1000"
 	retryAttempts="20"
 	retryInterval="1000"/>
