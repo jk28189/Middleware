@@ -10,7 +10,7 @@
 	forceSaveAfterRequest="false"
 	dirtyOnMutation="false"
 	ignorePattern=".*\\.(ico|png|gif|jpg|jpeg|swf|css|js)$"
-	connectionPoolSize="11"
+	connectionPoolSize="20"
 	database="0"
 	timeout="600000"
 	pingTimeout="600000"
