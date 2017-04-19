@@ -12,8 +12,8 @@
 	ignorePattern=".*\\.(ico|png|gif|jpg|jpeg|swf|css|js)$"
 	connectionPoolSize="20"
 	database="0"
-	timeout="60000"
-	pingTimeout="60000"
+	timeout="600000"
+	pingTimeout="600000"
 	retryAttempts="40"
 	retryInterval="1000"/>
 </Context>
