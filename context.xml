@@ -10,11 +10,11 @@
 	forceSaveAfterRequest="false"
 	dirtyOnMutation="false"
 	ignorePattern=".*\\.(ico|png|gif|jpg|jpeg|swf|css|js)$"
-	connectionPoolSize="100"
+	connectionPoolSize="10"
 	database="0"
 	timeout="60000"
 	connectionMinimumIdleSize="1"
-	pingTimeout="1000"
-	retryAttempts="20"
+	pingTimeout="60000"
+	retryAttempts="40"
 	retryInterval="1000"/>
 </Context>
