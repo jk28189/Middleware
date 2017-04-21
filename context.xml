@@ -4,7 +4,7 @@
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
   <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="192.10.250.229:20158"
+	endpoint="redis.marathon.containerip.dcos.thisdcos.directory:46968,redis.marathon.containerip.dcos.thisdcos.directory:20158"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
