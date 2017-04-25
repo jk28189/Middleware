@@ -3,7 +3,7 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
- <!-- <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+  <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
 	endpoint="marathon-lb-internal-loadblancer.marathon.mesos:10080"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
@@ -15,5 +15,5 @@
 	timeout="600000"
 	pingTimeout="600000"
 	retryAttempts="40"
-	retryInterval="1000"/> -->
+	retryInterval="1000"/> 
 </Context>
