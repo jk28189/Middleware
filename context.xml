@@ -3,8 +3,8 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
-  <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint="rc-redis.marathon.containerip.dcos.thisdcos.directory:7000"
+  <Manager className="com.crimsonhexagon.rsm.redisson.ElasticacheSessionManager"
+	endpoint="rc-redis.marathon.containerip.dcos.thisdcos.directory:7000,rc-redis.marathon.containerip.dcos.thisdcos.directory:7001,rc-redis.marathon.containerip.dcos.thisdcos.directory:7002"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
