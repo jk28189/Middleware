@@ -3,8 +3,8 @@
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
     <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
 
- <!-- <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
-	endpoint=""
+  <Manager className="com.crimsonhexagon.rsm.redisson.SingleServerSessionManager"
+	endpoint="redis.marathon.containerip.dcos.thisdcos.directory:7000"
 	sessionKeyPrefix="_rsm_"
 	saveOnChange="false"
 	forceSaveAfterRequest="false"
@@ -15,5 +15,5 @@
 	timeout="600000"
 	pingTimeout="600000"
 	retryAttempts="40"
-	retryInterval="1000"/> -->
+	retryInterval="1000"/> 
 </Context>
