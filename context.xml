@@ -22,7 +22,7 @@
                username="devacc" password="7dkvZlh?r9ww" driverClassName="com.mysql.jdbc.Driver"
                url="jdbc:mysql://192.10.250.225:3306/AJDB?useUnicode=true;characterEncoding=utf8;useSSL=false"/> -->
     
-         <Resource name="jdbc/AJDB" auth="Container" type="javax.sql.DataSource"
+         <Resource name="jdbc/ajrerp" auth="Container" type="javax.sql.DataSource"
                         maxTotal="100" maxIdle="30" maxWaitMillis="10000"
                username="proxyadmin" password="proxyadmin" driverClassName="com.mysql.jdbc.Driver"
                url="jdbc:mysql://xtradbproxysql.marathon.l4lb.thisdcos.directory:3306/AJDB?useUnicode=true;characterEncoding=utf8;useSSL=false"/> 
