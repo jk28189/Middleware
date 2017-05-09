@@ -25,7 +25,7 @@
          <Resource name="jdbc/ajrerp" auth="Container" type="javax.sql.DataSource"
                         maxTotal="100" maxIdle="30" maxWaitMillis="10000"
                username="proxyadmin" password="proxyadmin" driverClassName="com.mysql.jdbc.Driver"
-               url="jdbc:mysql://xtradbproxysql.marathon.l4lb.thisdcos.directory:3306/AJDB?useUnicode=true;characterEncoding=utf8;useSSL=false"/> 
+               url="jdbc:mysql://xtradbproxysql.marathon.l4lb.thisdcos.directory:3306/ajrerp?useUnicode=true;characterEncoding=utf8;useSSL=false"/> 
 
   <!-- <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
                       maxTotal="100" maxIdle="30" maxWaitMillis="10000"
