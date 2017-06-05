@@ -28,7 +28,7 @@
                url="jdbc:mysql://xtradbproxysql.marathon.l4lb.thisdcos.directory:3306/ajrerp"/> -->
     
     
-    <Resource name="jdbc/perconadb"
+<!--    <Resource name="jdbc/perconadb"
           auth="Container"
           type="javax.sql.DataSource"
           factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
@@ -46,7 +46,10 @@
           username="devacc"
           password="7dkvZlh?r9ww"
           driverClassName="com.mysql.jdbc.Driver"
-          url="jdbc:mysql://192.10.250.233:3306/AJDB"/>
+          url="jdbc:mysql://192.10.250.233:3306/AJDB"/> -->
+    
+    <Resource name="jdbc/perconadb" auth="Container" factory="com.zaxxer.hikari.HikariJNDIFactory" type="javax.sql.DataSource" dataSourceClassName="com.mysql.jdbc.jdbc2.optional.MysqlDataSource" minimumIdle="100" maximumPoolSize="200" connectionTimeout="300000" connectionTestQuery="SELECT 1 FROM dual" dataSource.url="jdbc:mysql://192.10.250.233:3306/AJDB" dataSource.user="devacc" dataSource.password="7dkvZlh?r9ww" dataSource.cachePrepStmts="true" dataSource.prepStmtCacheSize="250" dataSource.prepStmtCacheSqlLimit="2048" dataSource.useServerPrepStmts="true" />
+
 
 
   <!-- <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
